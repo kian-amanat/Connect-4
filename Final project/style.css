@@ -1,0 +1,128 @@
+html{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    
+}
+body{
+    margin-bottom: -2000px;
+}
+h1{
+font-size: 45px;
+margin-top: -1200px;
+margin-left: 490px;
+animation: flicker 1.5s infinite alternate;
+color: #ffffff;
+
+}
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #4400ff,
+        0 0 11px #6933ff,
+        0 0 19px #8120ff,
+        0 0 40px rgb(81, 0, 255),
+        0 0 80px rgb(96, 22, 255),
+        0 0 90px rgb(96, 22, 255),
+        0 0 100px rgb(96, 22, 255),
+        0 0 150px rgb(96, 22, 255);
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+
+#myVideo{
+    margin-left: -20px;
+    margin-top: -550px;
+    width: 1296px;
+    height: 1800px;
+}
+
+.name{
+    margin-top: 50px;
+    margin-left: 400px;
+    width: 380px;
+    height: 30px;
+    border-radius: 100px;
+    position: relative;
+    border: 0;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+button{
+    position: relative;
+    height: 50px;
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    
+}
+#btn{
+    position: relative;
+    display: block;
+    margin-top: -33px;
+    margin-left: 810px;
+    width: 100px;
+    height: 33px;
+    font-size: 15px;
+    border-radius: 20px;
+    border: 0;
+    background-color: rgb(72, 0, 255);
+    color: white;
+}
+ div  {  
+    display: flex;
+    
+}
+#index{
+    margin-top: 150px;
+    color: #ffffff;
+    font-size: 26px;
+    background-color:#6933ff;
+    margin-left: 350px;
+    width:60px ;
+    height: 45px;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+h3{
+    margin-top: 150px;
+    font-size: 20px;
+    height: 50px;
+    padding-top: 15px;
+    position: relative;
+    margin-left: -100px;
+    
+}
+h2{
+    padding-top: 10px;
+    padding-left: 30px;
+    margin-top: 150px;
+    margin-left: 10px;
+    color: #6933ff;
+    position: relative;
+    width: 400px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+#card-btn{
+    border-radius: 20px;
+    border: 0;
+    color: white;
+    background-color:  #6933ff;
+    margin-top: 150px;
+    margin-left: 50px;
+    height: 60px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}

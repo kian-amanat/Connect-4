@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link href="index.css" rel="stylesheet" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Permanent+Marker&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <title> Connect 4 </title>
+</head>
+
+<body >
+    <video autoplay muted loop id="myVideo">
+        <source src="/items/space.mp4" type="video/mp4" loop>
+      </video>
+    <h1>Connect 4</h1>
+    <section id="turn">
+        <h4 id="turn-text"> Name , it's your turn ...</h4>
+    </section>
+    
+    <section class="player-point">
+        <div id="player1">
+<h2 id="myH2"></h2>
+<p id="point">0</p>
+        </div>
+        <div id="player2">
+            <h3 id="myH3"></h3>
+            <p id="point2">0</p>
+        </div>
+    </section>
+    <section id="winner-card">
+ <div id="card1">
+<img>
+<p id="text-card">"Congrats ,<span id="mySpan">Name</span> you won!"</p>
+<a><button id="new-game" onClick=" animationSlide() ">New Game</button></a>
+ </div>
+
+    </section>
+    <main>
+        <section id="mouse-field" onmousemove="mousePosition()">
+
+        <section id="click" onclick="lineThrowBall()" >
+
+        <section id="line1" >
+
+            <div>
+                <img id="cell1" src="/items/cell.svg">
+            </div>
+
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell2" src="/items/cell.svg">
+            </div>
+
+        </section>
+        <section id="line2">
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+
+        </section>
+        <section id="line3">
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+
+        </section>
+        <section id="line4">
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+
+        </section>
+        <section id="line5">
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+
+        </section>
+        <section id="line6">
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+
+        </section>
+        <section id="line7">
+            <div>
+                <img id="cell3" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell" src="/items/cell.svg">
+            </div>
+            <div>
+                <img id="cell4" src="/items/cell.svg">
+            </div>
+
+        </section>
+    </section>
+    </section>
+        <section id="sec-circle">
+            <div id="circle"  class="win-animation"> 
+            </div>
+            
+        </section>
+    </main>
+
+
+    <script src="game.js"> </script>
+    
+
+
+</body>
+</html>
